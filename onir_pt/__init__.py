@@ -418,7 +418,7 @@ class OpenNIRPyterrierReRanker(pyterrier.transformer.EstimatorBase):
                 elif f == 'doc_len':
                     batch[f].append(len(doc_tok))
                 elif f == 'query_idf':
-                    batch[f].append(len([0])
+                    batch[f].append(len([0]))
                 else:
                     raise ValueError(f'unsupported field {f}')
             batch_count += 1
